@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PDM Trabalho</string>
+    <string-array name="cursos">
+        <item>Ciência da Computação</item>
+        <item>Redes de Computadores</item>
+        <item>Engenharia da Computação</item>
+    </string-array>
+</resources>
