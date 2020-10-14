@@ -81,7 +81,7 @@ public class Disciplina extends ListActivity {
     }
 
     public void novaTela(String disciplina) {
-        Intent novaActivity = new Intent(this, Calculo.class);
+        Intent novaActivity = new Intent(this, Calculos.class);
 
         // Passando parâmetros
         Bundle bundle = new Bundle();
