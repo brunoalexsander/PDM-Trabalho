@@ -9,10 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AprovadoReprovadoAvaliacaoFinal"></activity>
-        <activity android:name=".CalculoAvaliacaoFinal" />
-        <activity android:name=".AprovadoReprovado" />
-        <activity android:name=".Calculo" />
+        <activity android:name=".Calculos" />
         <activity android:name=".Disciplina" />
         <activity android:name=".Principal">
             <intent-filter>
