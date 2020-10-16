@@ -11,7 +11,7 @@
         android:id="@+id/txtDisciplina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Disciplina:"
+        android:text="@string/txtDisciplina"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnCalcular"
-        android:text="Voltar" />
+        android:text="@string/btnVoltar" />
 
     <TextView
         android:id="@+id/txtResultado"

@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">PDM Trabalho</string>
+    <string name="txtRA">RA:</string>
+    <string name="edtRA">Informe o RA</string>
+    <string name="txtNome">Nome completo:</string>
+    <string name="edtNome">Informe o nome completo</string>
+    <string name="txtCurso">Curso:</string>
     <string-array name="cursos">
         <item>Ciência da Computação</item>
         <item>Redes de Computadores</item>
         <item>Engenharia da Computação</item>
     </string-array>
+    <string name="txtTurma">Turma:</string>
+    <string name="edtTurma">Informe a turma</string>
+    <string name="btnFechar">Desistir</string>
+    <string name="btnAvancar">Avançar</string>
+    <string name="txtDisciplina">Disciplina:</string>
+    <string name="edtDisciplina">Informe a disciplina</string>
+    <string name="btnGravar">Gravar</string>
+    <string name="btnVoltar">Voltar</string>
 </resources>
