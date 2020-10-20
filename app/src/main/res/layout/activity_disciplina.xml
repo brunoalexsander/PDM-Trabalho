@@ -90,14 +90,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/glHorizontal" />
 
-<!--    <Button
-        android:id="@+id/btnAvancar"
+    <Button
+        android:id="@+id/btnAvancarDois"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Avançar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/glMiddle"
-        app:layout_constraintTop_toTopOf="@+id/glHorizontal" />-->
+        app:layout_constraintTop_toTopOf="@+id/glHorizontal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,15 +16,22 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txtNomeDisciplina"
+<!--    <TextView-->
+<!--        android:id="@+id/txtNomeDisciplina"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/txtDisciplina"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:textColor="#969696"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+    <Spinner
+        android:id="@+id/spinnerDisciplina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtDisciplina"
-        android:layout_marginTop="5dp"
-        android:textColor="#969696"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+        android:theme="@style/spinnerTheme"
+        android:layout_below="@id/txtDisciplina" />
 
     <TextView
         android:id="@+id/txtNotaA1"
@@ -33,7 +40,7 @@
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtNomeDisciplina"
+        android:layout_below="@id/spinnerDisciplina"
         android:text="Nota A1:" />
 
     <EditText

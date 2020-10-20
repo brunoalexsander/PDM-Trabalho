@@ -26,6 +26,7 @@ public class Disciplina extends ListActivity {
         final EditText edtDisciplina = (EditText) findViewById(R.id.edtDisciplina);
         final Button btnGravar = (Button) findViewById(R.id.btnGravar);
         final Button btnVoltar = (Button) findViewById(R.id.btnVoltar);
+        final Button btnAvancarDois = (Button) findViewById(R.id.btnAvancarDois);
 
         limpaDisciplina();
         atualizaLista();
@@ -38,6 +39,18 @@ public class Disciplina extends ListActivity {
                     disciplinas.add(disciplina);
                     limpaDisciplina();
                     atualizaLista();
+                }
+            }
+        });
+
+        btnAvancarDois.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (disciplinas.isEmpty()) {
+                    Toast.makeText(Disciplina.this, "Salve ao menos uma disciplina!", Toast.LENGTH_SHORT).show();
+                } else {
+                    novaTela(disciplinas.get(0));
+                    Calculos.disciplinas = disciplinas;
                 }
             }
         });

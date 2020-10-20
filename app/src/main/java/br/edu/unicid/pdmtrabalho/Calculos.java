@@ -7,14 +7,21 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class Calculos extends AppCompatActivity {
 
+    public static ArrayList<String> disciplinas;
+
     // Create elements
+    Spinner spnDisciplinas;
     TextView txtNotaA1;
     EditText notaA1;
     TextView txtNotaA2;
@@ -30,7 +37,8 @@ public class Calculos extends AppCompatActivity {
         setContentView(R.layout.activity_calculos);
 
         // Initialize elements
-        txtNomeDisciplina = findViewById(R.id.txtNomeDisciplina);
+        //txtNomeDisciplina = findViewById(R.id.txtNomeDisciplina);
+        spnDisciplinas = findViewById(R.id.spinnerDisciplina);
         txtNotaA1 = findViewById(R.id.txtNotaA1);
         notaA1 = findViewById(R.id.edtNotaA1);
         txtNotaA2 = findViewById(R.id.txtNotaA2);
@@ -39,13 +47,20 @@ public class Calculos extends AppCompatActivity {
         voltar = findViewById(R.id.btnVoltar);
         resultado = findViewById(R.id.txtResultado);
 
+        disciplinas = Disciplina.disciplinas;
+
         // Recovery data
         Intent intent = getIntent();
         Bundle parameters = intent.getExtras();
         final String nomeDisciplina = parameters.getString("disciplina");
 
+        // Carregar spinner
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,   android.R.layout.simple_spinner_item, disciplinas);
+        adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spnDisciplinas.setAdapter(adaptador);
+
         // Set name of discipline
-        txtNomeDisciplina.setText(nomeDisciplina);
+        //txtNomeDisciplina.setText(nomeDisciplina);
 
         // Button calculate
         calcular.setOnClickListener(new View.OnClickListener() {
